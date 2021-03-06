@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.beginning {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    padding: 60px;
+}
+
+header .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .categories {
+    display: flex;
+    justify-content: center;
+}
+
+header .categories a{
+    color: indigo;
+    margin: 10px 20px;
+    font-size: 18px;
+}
+
+.skills {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Projects {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
