@@ -1,26 +1,149 @@
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="beginning">
-        <div class="logo">
-            <h1>Carlos Salazar</h1>
-            <p>Computational Robotics Engineer</p>
-        </div>
-        <div class="categories" id="categories">
-            <a href="#" class="active">Skills-Technologies</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact me</a>
-        </div>
-    </header>
-    <section class="skills">
-        <h1>Skills & Technologies</h1>
-    </section>
-    <section class="Projects">
-        <h1>Projects</h1>
-    </section>
-    <section class="contact">
-        <h1>Contact me</h1>
-    </section>
-</body>
+<html>
+    <head>
+      <title>Carlos Portfolio</title>
+      <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="font.css">
+      <link href="carousel.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#home">Home</a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills-Technologies</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificates">Certificates-Awards</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="logo" id="home">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Carlos Salazar Portfolio</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">"I'm a 23 years old Computational Robotics Engineer that loves to learn in any circumstances, 
+                        i'm passionate about videogames, sports and watch any kind of movies and T.V Series"</h2>
+                </div>
+            </div>
+        </header>
+        <section class="Skills-Technologies text-center" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-white mb-4">Skills-Technologies</h2>
+                    </div>
+                </div>
+                <img class="img-fluid" src="img/portada2.png" alt="" />
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="bg-light project-h2">Projects</h2>
+            <div class="projects bg-light">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>Automated telescope</h4>
+                    <p class="text-black-50 mb-0">"During my first profesional experience at the university I had the opportunity to automate a Computarized-telescope,
+                        This project was made with an arduino-uno, stelarium and a step-to-step motor"</p>
+                        <img class="img-fluid mb-3 mb-lg-0" src="img/Q130ACOMPU_telescopio+computarizado.jpg" alt="Computarized-telescope">
+                </div>
+                <div class="featured-text text-center text-lg-left">
+                    <h4>Kuka-Grasshopper</h4>
+                    <p class="text-black-50 mb-0">"Through the Grasshopper software it was made a program for a KUKA 
+                        Agilus KR6 R900, with this software the robot was able to draw figures in a piece of paper and 
+                        in other materials like acrylic"</p>
+                        <img class="img-fluid mb-3 mb-lg-0 img-kuka" src="img/Robotic_programming.jpg" alt="Kuka-Grasshopper">
+                </div>
+                <div class="featured-text text-center text-lg-left">
+                    <h4>KUKA-PLC</h4>
+                    <p class="text-black-50 mb-0">"On my last four months in the university, I had to find a way to make possible
+                        a communication through the Kuka robot that the university has with a PLC without having any license. For
+                        this it was used the digital inputs and outputs of the PLC to send a signal to the robot"</p>
+                        <img class="img-fluid mb-3 mb-lg-0 img-kuka-plc" src="img/109482123_S7-1500_KUKA_mxAutomation_PIC_01.png" alt="Carlos-Salazar">
+                </div>
+            </div>
+        </section>
+        <section class="certificates" id="certificates">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div>
+                    <h2 class="bg-light" style="margin-bottom: 0; padding-bottom: 2rem;">Certificates && Awards</h2>
+                </div>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <img src="img/The7habbits.jpg" alt="">
+                    <div class="container">
+                      <div class="carousel-caption text-start">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <img src="img/St.phillips.jpg" alt="">
+                    <div class="container">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <img src="img/PPA.jpg" alt="">
+                    <div class="container">
+                      <div class="carousel-caption text-end">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <img src="img/MOV.jpg" alt="">
+                    <div class="container">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <img src="img/A&M.jpg" alt="">
+                    <div class="container">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  </div>
+                </div>    
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="contact bg-black" id="contact">
+            <div class="container">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">Contact me</h2>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a href="mailto:Carlos.Salazar@theksquaregroup.com" class="icon icon-mail4" target="_blank"></a>
+                    <a href="https://www.facebook.com/CaRlOsSaLaZaR0297/" class="icon icon-facebook2" target="_blank"></a>
+                    <a href="https://www.instagram.com/carlos_0297/" class="icon icon-instagram" target="_blank"></a>
+                    <a href="https://github.com/Carlos-salasan" class="icon icon-github" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/carlos-felipe-salazar-s%C3%A1nchez-ab3769196/" class="icon icon-linkedin" target="_blank"></a>
+                    <a href="https://trailblazer.me/id/csalazar27" class="icon icon-cloud"></a>
+                </div>
+            </div>
+        </section>
+        <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
